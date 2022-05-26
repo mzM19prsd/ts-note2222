@@ -4,8 +4,12 @@
         shots:number;
         hasMilk:boolean;
     }
+    interface CoffeMachine{
+        fillCoffeeBeans(beans:number):void     
+        makeCoffee(shots:number):CoffeeCup
+    }
 
-    class CoffeMaker{
+    class CoffeMaker implements CoffeMachine{
         private static Beans_Per_Shot:number=7;
         private coffeBeans=0;
 
