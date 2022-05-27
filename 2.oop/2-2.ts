@@ -43,7 +43,7 @@
 
     const maker1:CoffeMachine_A= CoffeMaker.makeMachine(0)
     maker1.fillCoffeeBeans(7); 
-    maker1.makeCoffee(1);//CoffeMachine_A에서 사용불가능
+    // maker1.makeCoffee(1);
 
     const maker2:CoffeMachine_B=CoffeMaker.makeMachine(0)
     maker2.fillCoffeeBeans(7)
